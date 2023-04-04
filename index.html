@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Contact list</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <ul>
+
+    </ul>
+  </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="icon-container" onclick="openModal()">
+          <span class="plus-icon"></span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal-content">
+        <h2>Enter your information</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="modal" id="editModal">
+      <div class="modal-content">
+        <span class="close-modal-btn">&times;</span>
+        <h2>Edit Contact</h2>
+        <form>
+          <label for="edit-name">Name:</label>
+          <input type="text" id="edit-name" name="edit-name" required>
+          <label for="edit-phone">Phone:</label>
+          <input type="text" id="edit-phone" name="edit-phone" required>
+          <button type="submit" class="save-edit-btn">Save Changes</button>
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Project -->
+    <script src="main.js"></script>
+</body>
+
+</html>
